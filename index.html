@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Show</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body id="body">
+    <div class="container" >
+
+        <div class="slider" id="sliderModal">
+            
+            <div class="slider-wapper">
+
+                
+                <div class="slider-main ">
+                   
+                
+                    <div class="slider-item">
+                
+                        <!-- <div class="numbertext">
+                            1 / 4
+                        </div> -->
+                        <img src="https://b-static.besthdwallpaper.com/jujutsu-kaisen-toge-inumaki-4k-hinh-nen-1280x720-90074_45.jpg" alt="" class="img">
+                        <div class="text">Toge Inumaki</div>
+                    </div>
+
+                    <div class="slider-item">
+                
+                        <!-- <div class="numbertext">
+                            2 / 4
+                        </div> -->
+                        <img src="https://pbs.twimg.com/media/EvPNvbDUYAQJ1sC.jpg:large" alt="" class="img">
+                        <div class="text">Gojo</div>
+                    </div>
+                    <div class="slider-item">
+                
+                        <!-- <div class="numbertext">
+                            3/ 4
+                        </div> -->
+                        <img src="https://cdn.popsww.com/blog/sites/2/2022/02/tanjirou.jpg" alt="" class="img">
+                        <div class="text">Toge Inumaki</div>
+                    </div>
+
+
+                    <div class="slider-item">
+                
+                        <!-- <div class="numbertext">
+                            4 / 2
+                        </div> -->
+                        <img src="http://images6.fanpop.com/image/photos/43400000/-Zenitsu-Agatsuma-kimetsu-no-yaiba-43410600-1280-720.jpg" alt="" class="img">
+                        <div class="text">Gojo</div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="prev">❮</a>
+            <a class="next">❯</a>
+
+        </div>
+
+        <div id="body">
+            <div class="l-navbar" id="navbar">
+                <div class="nav">
+                    <div>
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class="bi bi-caret-right"></i>
+                        </div>
+                        <div class="nav__list">
+                            <a href="#" class="nav__link " id="home">
+                                <i class="bi bi-grid nav__icon"></i>
+                                <span class="nav__text">Home
+                                    <ul class="dropdown-content" id="homeList">
+                                        <li>Anime-Wjbu</li>
+                                        <li>ManHwa</li>
+                                        <li>Phim 18+</li>
+                                    </ul>
+                                        
+                                </span>
+                            </a>
+                            <a href="#" class="nav__link "  id="drop">
+                                <i class="bi bi-person nav__icon"></i>
+                                <span class="nav__text">User
+                                    <ul class="dropdown-content user-list " id="userDrop">
+                                        <li id="login">
+                                            Đăng nhập
+                                            
+                                        </li>
+                                        <li id="sign">Đăng ký</li>
+                                        <li>Guest</li>
+                                    </ul>
+                                </span>
+                            </a>
+                            <a href="#" class="nav__link drop3">
+                                <i class="bi bi-bell nav__icon"></i>
+                                <span class="nav__text">Notification
+                                    <ul class="dropdown-content note-list" id="noteDown ">
+                                        <li>Anime-Wjbu</li>
+                                        <li>ManHwa</li>
+                                        <li>18+</li>
+                                    </ul>
+                                </span>
+                            </a>
+                            <a href="#" class="nav__link ">
+                                <i class="bi bi-heart nav__icon"></i>
+                                <span class="nav__text">Favorites</span>
+                            </a>
+                            <a href="#" class="nav__link ">
+                                <i class="bi bi-chat nav__icon"></i>
+                                <span class="nav__text">Chat</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav__link ">
+                        <i class="bi bi-box-arrow-left nav__icon"></i>
+                        <span class="nav__text">Close</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swapper mr-top " id="swapper">
+            <div class="modal" id="myModal">
+
+                <span class="close" id="closeModal">X</span>
+
+                <head class="head">
+                    <div class="container pl-20">
+                      <div class="head">
+                        <div class="text-head">
+                          <h1 class="text-heading">Đăng Ký</h1>
+                        </div>
+                        <div class="text-sup">
+                          Nhanh chóng và dễ dàng
+                        </div>
+                      </div>
+                    </div>
+                  </head>
+                  <section class="section pt-20">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-6">
+                          <form action="first-name">
+                            <div class="user-name">
+                              <label for="user"></label>
+                              <input
+                                type="text"
+                                name="username"
+                                id="user"
+                                placeholder="Họ"
+                                class="size-name"
+                              />
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-6">
+                          <form action="last-name">
+                            <div class="name">
+                              <label for="text-name"></label>
+                              <input
+                                type="text"
+                                name="username"
+                                id="text-name"
+                                placeholder="Tên"
+                                class="size-name"
+                              />
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="row pt-10">
+                        <div class="col-12">
+                          <form action="num-phone">
+                            <div class="text-phone">
+                              <label for="mail"></label>
+                              <input
+                                type="email"
+                                name="phone-mail"
+                                id="mail"
+                                placeholder="Số di động hoặc email"
+                                class="size"
+                              />
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="row pt-10">
+                        <div class="col-12">
+                          <form action="pass-word">
+                            <div class="pass">
+                              <label for="password"></label>
+                              <input
+                                type="password"
+                                name="pass"
+                                id="password"
+                                placeholder="Mật khẩu mới"
+                                class="size"
+                              />
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="date pt-20">Sinh nhật</div>
+                      <div class="date-time d-flex gap-10">
+                        <div class="day">
+                          <label for="day"></label>
+                          <select name="num-day" id="day" class="day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                          </select>
+                        </div>
+            
+                        <div class="month">
+                          <label for="month"></label>
+                          <select name="num-month" id="month" class="month">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                          </select>
+                        </div>
+            
+                        <div class="year">
+                          <label for="year"></label>
+                          <select name="num-year" id="year" class="year">
+                            <option value="2010">2010</option>
+                            <option value="">2011</option>
+                            <option value="">2012</option>
+                            <option value="">2013</option>
+                            <option value="">2014</option>
+                            <option value="">2015</option>
+                            <option value="">2016</option>
+                            <option value="">2017</option>
+                            <option value="">2018</option>
+                            <option value="">2019</option>
+                            <option value="">2020</option>
+                            <option value="">2021</option>
+                            <option value="">2022</option>
+                            <option value="">2023</option>
+                            <option value="">2024</option>
+                          </select>
+                        </div>
+                      </div>
+            
+                      <div class="text-gender pt-20 pb-3">Giới tính</div>
+            
+                      <div class="gender d-flex gap-10 h-30 pt-5">
+                        <div class="female d-flex a-center j-space b-solid h-30">
+                          <label for="female">Nữ</label>
+                          <input type="radio" name="gender" id="female" />
+                        </div>
+                        <div class="male d-flex a-center j-space b-solid h-30">
+                          <label for="male">Nam</label>
+                          <input type="radio" name="gender" id="male" />
+                        </div>
+                        <div class="setting d-flex a-center j-space b-solid h-30">
+                          <label for="setting">Tùy chỉnh</label>
+                          <input type="radio" name="gender" id="setting" />
+                        </div>
+                      </div>
+            
+                      <div class="text-footer pt-10">
+                        Người dùng dịch vụ của chúng tôi có thể đã tải thông tin liên hệ của
+                        bạn lên facebook.
+                        <a href="#" class="text-foot">Tìm hiểu thêm</a>
+                      </div>
+                      <div class="text-end">
+                        Bằng cách nhấp vào đăng ký. Bạn đồng ý với
+                        <a href="#" class="text-foot"
+                          >Điều khoản, chính sách dữ liệu và chính sách Cookie</a
+                        >
+                        của chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS
+                        và hủy nhận bất cứ lúc nào
+                      </div>
+                      <div class="subcriber pt-20">
+                        <button class="button">Đăng ký</button>
+                      </div>
+                    </div>
+                  </section>
+
+            </div>
+        </div>
+
+        <div class="box mr-top " id="box">
+            <div class="modal" id="boxModal">
+
+                <span class="close" id="closeModalBox">X</span>
+
+                <head class="head">
+                    <div class="container pl-20">
+                      <div class="head">
+                        <div class="text-head">
+                          <h1 class="text-heading">Đăng Nhập</h1>
+                        </div>
+                        <div class="text-sup">
+                          Nhanh chóng và dễ dàng
+                        </div>
+                      </div>
+                    </div>
+                  </head>
+                  <section class="section pt-20">
+                    <div class="container">
+                     
+                      <div class="row pt-10">
+                        <div class="col-12">
+                          <form action="num-phone">
+                            <div class="text-phone">
+                              <label for="maill"></label>
+                              <input
+                                type="email"
+                                name="phone-mail"
+                                id="maill"
+                                placeholder="Số di động hoặc email"
+                                class="size"
+                              />
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="row pt-10">
+                        <div class="col-12">
+                          <form action="pass-word">
+                            <div class="pass">
+                              <label for="passwordd"></label>
+                              <input
+                                type="password"
+                                name="pass"
+                                id="passwordd"
+                                placeholder="Mật khẩu"
+                                class="size"
+                              />
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+
+            
+                      <div class="text-footer pt-10">
+                        Người dùng dịch vụ của chúng tôi có thể đã tải thông tin liên hệ của
+                        bạn lên facebook.
+                        <a href="#" class="text-foot">Tìm hiểu thêm</a>
+                      </div>
+                      <div class="text-end">
+                        Bằng cách nhấp vào đăng ký. Bạn đồng ý với
+                        <a href="#" class="text-foot"
+                          >Điều khoản, chính sách dữ liệu và chính sách Cookie</a
+                        >
+                        của chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS
+                        và hủy nhận bất cứ lúc nào
+                      </div>
+                      <div class="subcriber pt-20">
+                        <button class="button">Đăng Nhập</button>
+                      </div>
+                    </div>
+                  </section>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
